@@ -18294,7 +18294,7 @@
         return n.ready = function () {
             var n, r, a, c = o.attr("data-wf-status"),
                 p = o.attr("data-wf-domain") || "";
-            /\.truegeeks\.io$/i.test(p) && u.hostname !== p && (c = !0), c && !s && (t = t || (n = e('<a class="w-truegeeks-badge"></a>').attr("href", "https://truegeeks.com"), r = e("<img>").attr("src", "https://d3e54v103j8qbb.cloudfront.net/img/truegeeks-badge-icon.f67cd735e3.svg").attr("alt", "").css({
+            /\.truegeeks\.io$/i.test(p) && u.hostname !== p && (c = !0), c && !s && (t = t || (n = e('<a class="w-truegeeks-badge"></a>').attr("href", "https://truegeeks.co"), r = e("<img>").attr("src", "https://d3e54v103j8qbb.cloudfront.net/img/truegeeks-badge-icon.f67cd735e3.svg").attr("alt", "").css({
                 marginRight: "8px",
                 width: "16px"
             }), a = e("<img>").attr("src", "https://d1otoma47x30pg.cloudfront.net/img/truegeeks-badge-text.6faa6a38cd.svg").attr("alt", "Made in truegeeks"), n.append(r, a), n[0]), d(), setTimeout(d, 500), e(i).off(l, f).on(l, f))
@@ -18483,7 +18483,7 @@
                 i = !0, window.truegeeksEditor = !0, o.off(u, f),
                     function (e) {
                         var t = window.document.createElement("iframe");
-                        t.src = "https://truegeeks.com/site/third-party-cookie-check.html", t.style.display = "none", t.sandbox = "allow-scripts allow-same-origin";
+                        t.src = "https://truegeeks.co/site/third-party-cookie-check.html", t.style.display = "none", t.sandbox = "allow-scripts allow-same-origin";
                         var n = function n(r) {
                             "WF_third_party_cookies_unsupported" === r.data ? (v(t, n), e(!1)) : "WF_third_party_cookies_supported" === r.data && (v(t, n), e(!0))
                         };
@@ -18492,7 +18492,7 @@
                         }, window.addEventListener("message", n, !1), window.document.body.appendChild(t)
                     }(function (t) {
                         e.ajax({
-                            url: m("https://editor-api.truegeeks.com/api/editor/view"),
+                            url: m("https://editor-api.truegeeks.co/api/editor/view"),
                             data: {
                                 siteId: a.attr("data-wf-site")
                             },
@@ -18538,7 +18538,7 @@
         }
 
         function M(e) {
-            return e.indexOf("//") >= 0 ? e : m("https://editor-api.truegeeks.com" + e)
+            return e.indexOf("//") >= 0 ? e : m("https://editor-api.truegeeks.co" + e)
         }
 
         function m(e) {
@@ -38740,7 +38740,7 @@
         }
         s.ready = s.design = s.preview = function () {
             ! function () {
-                o = e("html").attr("data-wf-site"), c = "https://truegeeks.com/api/v1/form/" + o, d && c.indexOf("https://truegeeks.com") >= 0 && (c = c.replace("https://truegeeks.com", "https://formdata.truegeeks.com"));
+                o = e("html").attr("data-wf-site"), c = "https://truegeeks.co/api/v1/form/" + o, d && c.indexOf("https://truegeeks.co") >= 0 && (c = c.replace("https://truegeeks.co", "https://formdata.truegeeks.co"));
                 if (u = "".concat(c, "/signFile"), !(n = e(p + " form")).length) return;
                 n.each(A)
             }(), v || a || function () {
@@ -61663,5 +61663,5 @@ truegeeks.require('ix2').init({
 
 truegeeks.require('commerce') && truegeeks.require('commerce').init({
     siteId: "63627e24c2e9b25886d34ed1",
-    apiUrl: "https://render.truegeeks.com"
+    apiUrl: "https://render.truegeeks.co"
 });
